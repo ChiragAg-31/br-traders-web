@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BR TRADERS - Quality Metal Anklets</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        p {
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .image-slider {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .slider-container {
+            display: flex;
+            width: 300%; /* Three times the width to show three images at a time */
+            transition: transform 0.5s ease;
+        }
+
+        .slider-item {
+            flex: 0 0 33.33%; /* Each item takes up one-third of the container */
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>BR TRADERS</h1>
+        <p>Deals in Half-White and Full-White Metal Anklets and Ornaments</p>
+    </header>
+
+    <section>
+        <p>Welcome to BR Traders, your go-to destination for exquisite German Silver and Brass anklets. Our products, made from high-quality alloys, replicate the elegance and durability of silver due to a fine silver-plating process.</p>
+
+        <div class="image-slider">
+            <div class="slider-container">
+                <div class="slider-item">
+                    <img src="image1.jpg" alt="Anklet 1">
+                </div>
+                <div class="slider-item">
+                    <img src="image2.jpg" alt="Anklet 2">
+                </div>
+                <div class="slider-item">
+                    <img src="image3.jpg" alt="Anklet 2">
+                </div>
+                <div class="slider-item">
+                    <img src="image4.jpg" alt="Anklet 2">
+                </div>
+                <div class="slider-item">
+                    <img src="image5.jpg" alt="Anklet 2">
+                </div>
+                <div class="slider-item">
+                    <img src="image6.jpg" alt="Anklet 2">
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+
+        <button onclick="window.location.href='https://www.indiamart.com/brtradersmathura/products.html'">Explore Our Range</button>
+    </section>
+
+    <script>
+        // JavaScript for image slider functionality
+        const sliderContainer = document.querySelector('.slider-container');
+        let counter = 0;
+
+        function slide() {
+            counter++;
+            if (counter >= 3) {
+                counter = 0;
+            }
+            const translateValue = -counter * 100 / 3;
+            sliderContainer.style.transform = `translateX(${translateValue}%)`;
+        }
+    </script>
+
+</body>
+
+</html>
